@@ -18,5 +18,7 @@ namespace csharpExceptions
         }
 
         public string Profissao { get; set; }
+		
+		
     }
 }

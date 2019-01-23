@@ -28,6 +28,8 @@ namespace csharpExceptions
             Console.WriteLine(string.Format("{0} tem {1} em dinheiro", danilo.Nome, conta.Saldo));
             Console.WriteLine(string.Format("{0} tem {1} em dinheiro", vitor.Nome, contaSafado.Saldo));
             Console.ReadLine();
+			
+			
         }
     }
 }
