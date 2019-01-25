@@ -1,35 +1,37 @@
 ﻿using System;
 
-namespace csharpExceptions
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Cliente danilo = new Cliente();
-            danilo.Nome = "Danilo Alves Costa";
-            danilo.CPF = "123.456.789-60";
-            danilo.Profissao = "Develop";
+namespace csharpExceptions {
+    class Program {
+        static void Main (string[] args) {
+            try{
+                Metodo ();
+            }catch(DivideByZeroException e){
+                Console.WriteLine(e.Message);
+                Console.WriteLine(e.StackTrace);
+            }
 
-            ContaCorrente conta = new ContaCorrente(159, 12345);
-            conta.Titular = danilo;
-            conta.Depositar(4000);
+            Console.ReadLine ();
 
-            Cliente vitor = new Cliente();
-            vitor.Nome = "Safado";
-            vitor.CPF = "123.321.789-60";
-            vitor.Profissao = "QA safado";
+        }
 
-            ContaCorrente contaSafado = new ContaCorrente(159, 12345);
-            contaSafado.Titular = vitor;
-            contaSafado.Depositar(10);
-            contaSafado.Transferir(10, conta);
+        public static int Dividir (int numero, int divisor) {
+            ContaCorrente c = null;
+            Console.WriteLine(c.Saldo);
+            
+            return numero / divisor;
+        }
 
-            Console.WriteLine(string.Format("{0} tem {1} em dinheiro", danilo.Nome, conta.Saldo));
-            Console.WriteLine(string.Format("{0} tem {1} em dinheiro", vitor.Nome, contaSafado.Saldo));
-            Console.ReadLine();
-			
-			
+        static void Metodo () {
+            try{
+                TestaDivisao (0);
+            }catch(NullReferenceException e){
+                Console.WriteLine(e.Message);
+                Console.WriteLine(e.StackTrace);
+            }
+        }
+
+        static void TestaDivisao (int divisor) {
+            Dividir (10, divisor);
         }
     }
 }
