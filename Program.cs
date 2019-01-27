@@ -8,6 +8,23 @@ namespace csharpExceptions
         {
             try
             {
+                ContaCorrente contaCorrente = new ContaCorrente(0, 0);
+            } catch (ArgumentException e)
+            {
+                if(e.ParamName == "conta")
+                {
+                    Console.WriteLine(e.Message);
+                }
+                if(e.ParamName == "agencia")
+                {
+                    Console.WriteLine(e.Message);
+                }
+            }
+
+
+
+            try
+            {
                 Metodo();
             }
             catch (DivideByZeroException)

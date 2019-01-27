@@ -8,4 +8,4 @@ C:\Danilo\csharpExceptions\obj\Debug\netcoreapp2.1\csharpExceptions.AssemblyInfo
 C:\Danilo\csharpExceptions\obj\Debug\netcoreapp2.1\csharpExceptions.AssemblyInfo.cs
 C:\Danilo\csharpExceptions\obj\Debug\netcoreapp2.1\csharpExceptions.dll
 C:\Danilo\csharpExceptions\obj\Debug\netcoreapp2.1\csharpExceptions.pdb
-C:\Danilo\csharpExceptions\obj\Debug\netcoreapp2.1\csharpExceptions.csprojAssemblyReference.cache
+C:\Danilo\csharpExceptions\obj\Debug\netcoreapp2.1\csharpExceptions.csprojResolveAssemblyReference.cache
