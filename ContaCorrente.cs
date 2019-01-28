@@ -30,13 +30,13 @@ namespace csharpExceptions
         {
             if (agencia <= 0)
             {
-                ArgumentException e = new ArgumentException("Agencia não pode ser menor ou igual à zero.", nameof(agencia));
+                ArgumentException e = new ArgumentException("Agencia n?o pode ser menor ou igual ? zero.", nameof(agencia));
                 throw e;
             }
 
             if (numero <= 0)
             {
-                ArgumentException e = new ArgumentException("numero não pode ser menor ou igual à zero.", nameof(numero));
+                ArgumentException e = new ArgumentException("numero n?o pode ser menor ou igual ? zero.", nameof(numero));
             }
 
             Agencia = agencia;
@@ -45,15 +45,15 @@ namespace csharpExceptions
             TotalDeContasCriadas++;
         }
 
-        public bool Sacar(double valor)
+        public void Sacar(double valor)
         {
             if (_saldo < valor)
             {
-                return false;
+                throw new SaldoInsuficienteException("Saldo Insuficiente!");
             }
 
             _saldo -= valor;
-            return true;
+            
         }
 
         public void Depositar(double valor)
@@ -71,10 +71,5 @@ namespace csharpExceptions
             contaDestinho.Depositar(valor);
             return true;
         }
-
-
-
-
-
     }
 }

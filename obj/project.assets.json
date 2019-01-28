@@ -688,8 +688,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dnl_a\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Users\\daniloc\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -698,24 +697,21 @@
       "projectUniqueName": "C:\\Danilo\\csharpExceptions\\csharpExceptions.csproj",
       "projectName": "csharpExceptions",
       "projectPath": "C:\\Danilo\\csharpExceptions\\csharpExceptions.csproj",
-      "packagesPath": "C:\\Users\\dnl_a\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\daniloc\\.nuget\\packages\\",
       "outputPath": "C:\\Danilo\\csharpExceptions\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\dnl_a\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Users\\daniloc\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "http://nuget.dev.me.com.br/nuget": {},
+        "https://nuget.org/api/v2/": {}
       },
       "frameworks": {
         "netcoreapp2.1": {

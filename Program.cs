@@ -8,7 +8,9 @@ namespace csharpExceptions
         {
             try
             {
-                ContaCorrente contaCorrente = new ContaCorrente(0, 0);
+                ContaCorrente contaCorrente = new ContaCorrente(123, 123);
+                contaCorrente.Sacar(500000);
+
             } catch (ArgumentException e)
             {
                 if(e.ParamName == "conta")
@@ -19,9 +21,9 @@ namespace csharpExceptions
                 {
                     Console.WriteLine(e.Message);
                 }
+            } catch(SaldoInsuficienteException e){
+                Console.WriteLine(e.Message);
             }
-
-
 
             try
             {
@@ -41,9 +43,6 @@ namespace csharpExceptions
 
         public static int Dividir(int numero, int divisor)
         {
-            //ContaCorrente c = null;
-            //Console.WriteLine(c.Saldo);
-
             try
             {
                 return numero / divisor;
@@ -57,7 +56,7 @@ namespace csharpExceptions
 
         static void Metodo()
         {
-            TestaDivisao(0);
+            TestaDivisao(5);
         }
 
         static void TestaDivisao(int divisor)
